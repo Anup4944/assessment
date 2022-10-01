@@ -1,0 +1,48 @@
+.eventDetails {
+  height: 100%;
+  background: linear-gradient(90deg, #ffd7e0 24.2%, #e61445 120.46%);
+  background-size: 400% 400%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.eventForm {
+  background-color: white;
+  height: 100%;
+  width: 50%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.eventForm > h2 {
+  color: #501fc1;
+}
+.eventForm > input {
+  box-sizing: border-box;
+  padding: 1vmax 2vmax;
+  width: 80%;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  margin: 2vmax;
+  font: 100 1.2rem "Roboto", sans-serif;
+  outline: none;
+}
+
+.eventForm > button {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #00805e;
+}

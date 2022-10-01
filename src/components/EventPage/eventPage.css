@@ -1,0 +1,100 @@
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  position: relative;
+}
+
+.leftEvent {
+  position: absolute;
+  width: 333px;
+  height: 37px;
+  left: 240px;
+  top: 194px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.topDetails {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.topDetails > h4 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 55px;
+  color: #240d57;
+}
+
+.topDetails > h5 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #828282;
+  margin-top: -70px;
+}
+
+.bottomDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.time,
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+  gap: 27px;
+}
+
+.time > svg,
+.address > svg {
+  width: 32px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.time > svg:hover,
+.address > svg:hover {
+  background: #8456ec;
+}
+
+.rightEvent {
+  position: relative;
+}
+
+.rightEvent > img {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 500px / 2 + 266px);
+  top: 184px;
+}
+
+@media only screen and (max-width: 600px) {
+  .event {
+    flex-direction: column;
+    position: fixed;
+  }
+
+  .rightEvent > img {
+    width: 375px;
+    height: 375px;
+  }
+}
